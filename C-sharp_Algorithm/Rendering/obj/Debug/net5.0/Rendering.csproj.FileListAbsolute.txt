@@ -1,0 +1,15 @@
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Rendering\bin\Debug\net5.0\Rendering.deps.json
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Rendering\bin\Debug\net5.0\Rendering.dll
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Rendering\bin\Debug\net5.0\ref\Rendering.dll
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Rendering\bin\Debug\net5.0\Rendering.pdb
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Rendering\obj\Debug\net5.0\Rendering.csproj.AssemblyReference.cache
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Rendering\obj\Debug\net5.0\Rendering.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Rendering\obj\Debug\net5.0\Rendering.AssemblyInfoInputs.cache
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Rendering\obj\Debug\net5.0\Rendering.AssemblyInfo.cs
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Rendering\obj\Debug\net5.0\Rendering.csproj.CoreCompileInputs.cache
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Rendering\obj\Debug\net5.0\Rendering.dll
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Rendering\obj\Debug\net5.0\ref\Rendering.dll
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Rendering\obj\Debug\net5.0\Rendering.pdb
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Rendering\bin\Debug\net5.0\Board.dll
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Rendering\bin\Debug\net5.0\Board.pdb
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Rendering\obj\Debug\net5.0\Rendering.csproj.CopyComplete

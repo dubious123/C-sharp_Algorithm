@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Arrangement/1.0.0": {
+        "dependencies": {
+          "Board": "1.0.0"
+        },
+        "runtime": {
+          "Arrangement.dll": {}
+        }
+      },
+      "Board/1.0.0": {
+        "runtime": {
+          "Board.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Arrangement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Board/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
