@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\한종훈\\Dropbox\\프로그래밍\\인프런\\C-sharp_Algorithm\\C-sharp_Algorithm\\Arrangement\\Arrangement.csproj",
-      "projectName": "Arrangement",
-      "projectPath": "C:\\Users\\한종훈\\Dropbox\\프로그래밍\\인프런\\C-sharp_Algorithm\\C-sharp_Algorithm\\Arrangement\\Arrangement.csproj",
+      "projectUniqueName": "C:\\Users\\한종훈\\Dropbox\\프로그래밍\\인프런\\C-sharp_Algorithm\\C-sharp_Algorithm\\Creature\\Creature.csproj",
+      "projectName": "Creature",
+      "projectPath": "C:\\Users\\한종훈\\Dropbox\\프로그래밍\\인프런\\C-sharp_Algorithm\\C-sharp_Algorithm\\Creature\\Creature.csproj",
       "packagesPath": "C:\\Users\\한종훈\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\한종훈\\Dropbox\\프로그래밍\\인프런\\C-sharp_Algorithm\\C-sharp_Algorithm\\Arrangement\\obj\\",
+      "outputPath": "C:\\Users\\한종훈\\Dropbox\\프로그래밍\\인프런\\C-sharp_Algorithm\\C-sharp_Algorithm\\Creature\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

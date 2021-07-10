@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "Arrangement/1.0.0": {
+      "Creature/1.0.0": {
         "runtime": {
-          "Arrangement.dll": {}
+          "Creature.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Arrangement/1.0.0": {
+    "Creature/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

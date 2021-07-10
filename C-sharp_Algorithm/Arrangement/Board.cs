@@ -1,4 +1,4 @@
-﻿using Creature;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +15,6 @@ namespace Board
         public int RowSize { get; private set; }
         public int ColumnSize { get; private set; }
         Random rand = new Random();
-        Player _player = new();
 
         public enum TileType
         {
@@ -24,9 +23,8 @@ namespace Board
             Empty,
             Wall
         }
-        public void Initialize(int Row,int Column, Player player)
+        public void Initialize(int Row,int Column, Creature.Player player)
         {
-            _player.Initialize(1, 1, RowSize, ColumnSize);
             //이 미로생성 알고리즘은 사이즈가 홀수여야함
             if (Row % 2 == 0 || Column % 2 == 0)
             {
@@ -237,7 +235,7 @@ namespace Board
             }
         }
 
-        public void Render()
+        public void Render(Creature.Player _player)
         {
             ConsoleColor DefaultColor = Console.ForegroundColor;
             Console.CursorVisible = false;

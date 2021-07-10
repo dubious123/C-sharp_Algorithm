@@ -10,3 +10,6 @@ C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_A
 C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Board\obj\Debug\net5.0\Board.dll
 C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Board\obj\Debug\net5.0\ref\Board.dll
 C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Board\obj\Debug\net5.0\Board.pdb
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Board\bin\Debug\net5.0\Creature.dll
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Board\bin\Debug\net5.0\Creature.pdb
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Board\obj\Debug\net5.0\Board.csproj.CopyComplete

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 namespace Arrangement
 {
@@ -17,15 +18,19 @@ namespace Arrangement
             int StartTick = 0;
 
             Board.Board board = new();
-            board.Initialize(ROW, COLUMN);
+            Creature.Player player = new();
+            player.Initialize(1, 1, board.ColumnSize-2, board.RowSize-2, board);
+            board.Initialize(ROW, COLUMN, player);
+
             while (true)
             {
 
                 if (board.FrameControl(StartTick, System.Environment.TickCount, WAIT_TICK))
                 {
+                    player.Update(System.Environment.TickCount- StartTick);
                     StartTick = System.Environment.TickCount;
                     Console.SetCursorPosition(0, 0);
-                    board.Render();
+                    board.Render(player);
                 }
 
             }
