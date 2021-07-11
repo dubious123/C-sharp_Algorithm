@@ -1,0 +1,16 @@
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\bin\Debug\net5.0\Exercise.exe
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\bin\Debug\net5.0\Exercise.deps.json
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\bin\Debug\net5.0\Exercise.runtimeconfig.json
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\bin\Debug\net5.0\Exercise.runtimeconfig.dev.json
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\bin\Debug\net5.0\Exercise.dll
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\bin\Debug\net5.0\ref\Exercise.dll
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\bin\Debug\net5.0\Exercise.pdb
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\obj\Debug\net5.0\Exercise.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\obj\Debug\net5.0\Exercise.AssemblyInfoInputs.cache
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\obj\Debug\net5.0\Exercise.AssemblyInfo.cs
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\obj\Debug\net5.0\Exercise.csproj.CoreCompileInputs.cache
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\obj\Debug\net5.0\Exercise.dll
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\obj\Debug\net5.0\ref\Exercise.dll
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\obj\Debug\net5.0\Exercise.pdb
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\obj\Debug\net5.0\Exercise.genruntimeconfig.cache
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Exercise\obj\Debug\net5.0\Exercise.csproj.AssemblyReference.cache
