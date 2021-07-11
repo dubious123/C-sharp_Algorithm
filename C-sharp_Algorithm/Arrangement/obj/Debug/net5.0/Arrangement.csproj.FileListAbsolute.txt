@@ -14,3 +14,5 @@ C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_A
 C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Arrangement\obj\Debug\net5.0\ref\Arrangement.dll
 C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Arrangement\obj\Debug\net5.0\Arrangement.pdb
 C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Arrangement\obj\Debug\net5.0\Arrangement.genruntimeconfig.cache
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Arrangement\bin\Debug\net5.0\Arrangement.dll.config
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\Arrangement\obj\Debug\net5.0\Arrangement.dll.config

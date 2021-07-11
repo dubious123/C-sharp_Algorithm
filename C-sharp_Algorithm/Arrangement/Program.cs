@@ -19,8 +19,8 @@ namespace Arrangement
 
             Board.Board board = new();
             Creature.Player player = new();
-            player.Initialize(1, 1, board.ColumnSize-2, board.RowSize-2, board);
             board.Initialize(ROW, COLUMN, player);
+            player.Initialize(1, 1,board);
 
             while (true)
             {

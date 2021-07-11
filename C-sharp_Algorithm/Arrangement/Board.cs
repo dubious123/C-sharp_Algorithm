@@ -14,6 +14,8 @@ namespace Board
         public TileType[,] Tile { get; private set; }
         public int RowSize { get; private set; }
         public int ColumnSize { get; private set; }
+        public int DestY { get; private set; }
+        public int DestX { get; private set; }
         Random rand = new Random();
 
         public enum TileType
@@ -33,6 +35,8 @@ namespace Board
             Tile = new TileType[Row, Column];
             RowSize = Row;
             ColumnSize = Column;
+            DestY = RowSize - 2;
+            DestX = ColumnSize - 2;
             GenerateBySideWinder();
         }
 
@@ -245,6 +249,7 @@ namespace Board
                 {
                     //플레이어 좌표를 갖고와서, 그 좌표라면 player 전용 색상으로 표시
                     if(y==_player.PosY && x == _player.PosX) { Console.ForegroundColor = ConsoleColor.Blue; }
+                    else if (y == DestY && x == DestY) { Console.ForegroundColor = ConsoleColor.Yellow; }
                     else { Console.ForegroundColor = GetTileColor(Tile[y, x]); }
                     Console.Write(CIRCLE);
                 }
