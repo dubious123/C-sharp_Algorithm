@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "DIY_Right-hand_Algorighm/1.0.0": {
+        "runtime": {
+          "DIY_Right-hand_Algorighm.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DIY_Right-hand_Algorighm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

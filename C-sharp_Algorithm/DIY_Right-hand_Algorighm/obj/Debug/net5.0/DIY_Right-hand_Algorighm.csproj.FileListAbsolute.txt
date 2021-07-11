@@ -1,0 +1,16 @@
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\bin\Debug\net5.0\DIY_Right-hand_Algorighm.exe
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\bin\Debug\net5.0\DIY_Right-hand_Algorighm.deps.json
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\bin\Debug\net5.0\DIY_Right-hand_Algorighm.runtimeconfig.json
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\bin\Debug\net5.0\DIY_Right-hand_Algorighm.runtimeconfig.dev.json
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\bin\Debug\net5.0\DIY_Right-hand_Algorighm.dll
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\bin\Debug\net5.0\ref\DIY_Right-hand_Algorighm.dll
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\bin\Debug\net5.0\DIY_Right-hand_Algorighm.pdb
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\obj\Debug\net5.0\DIY_Right-hand_Algorighm.csproj.AssemblyReference.cache
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\obj\Debug\net5.0\DIY_Right-hand_Algorighm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\obj\Debug\net5.0\DIY_Right-hand_Algorighm.AssemblyInfoInputs.cache
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\obj\Debug\net5.0\DIY_Right-hand_Algorighm.AssemblyInfo.cs
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\obj\Debug\net5.0\DIY_Right-hand_Algorighm.csproj.CoreCompileInputs.cache
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\obj\Debug\net5.0\DIY_Right-hand_Algorighm.dll
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\obj\Debug\net5.0\ref\DIY_Right-hand_Algorighm.dll
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\obj\Debug\net5.0\DIY_Right-hand_Algorighm.pdb
+C:\Users\한종훈\Dropbox\프로그래밍\인프런\C-sharp_Algorithm\C-sharp_Algorithm\DIY_Right-hand_Algorighm\obj\Debug\net5.0\DIY_Right-hand_Algorighm.genruntimeconfig.cache
