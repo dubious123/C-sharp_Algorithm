@@ -82,6 +82,7 @@ namespace DIY_Right_hand_Algorighm
                 for (int x = 0; x < COLUMN_SIZE; x++)
                 {
                     if(player.PosY == y&&player.PosX == x) { Console.ForegroundColor = player.PlayerColor; }
+                    else if (y == ExitY && x == ExitX) { Console.ForegroundColor = ConsoleColor.Yellow; }
                     else { Console.ForegroundColor = _Tiles[y, x]._tileColor; }
                     Console.Write(CIRCLE);
                 }

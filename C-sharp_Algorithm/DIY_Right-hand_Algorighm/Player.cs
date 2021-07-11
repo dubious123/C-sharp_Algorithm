@@ -76,7 +76,7 @@ namespace DIY_Right_hand_Algorighm
             _playerDir CurrentPlayerDir = _playerDir.Down;
             _ROW_SIZE = ROW_SIZE;
             _COLUMN_SIZE = COLUMN_SIZE;
-            PlayerColor = ConsoleColor.Yellow;
+            PlayerColor = ConsoleColor.Blue;
 
             while (PlayerPos.Last()._PosX != _ExistX && PlayerPos.Last()._PosX != _ExistX)
             {
