@@ -47,7 +47,7 @@ namespace Exercise
         };
   
         //DIijikstra
-
+        
         public void Dijikstra(int start)
         {
             bool[] visited = new bool[6];
@@ -63,6 +63,7 @@ namespace Exercise
                 //제일 좋은 후보를 찾는다(가장 가까이에 있는)
                 int closest = Int32.MaxValue;
                 int now = -1; 
+                //가장 유력한 후보의 거리와 번호를 저장하자 .... 그런데 모든 정점을 다 조사해야하니 매우 비효율적이다.
                 for (int i = 0; i < adj3.GetLength(0); i++)
                 {
                     //이미 방문한 정점은 스킵

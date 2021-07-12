@@ -46,7 +46,25 @@ namespace Exercise
             //graph.SearchAll();
 
             //graph.BFS2(0);
-            graph.Dijikstra(0);
+
+            TreeNode<string> root = new TreeNode<string>("R1 개발실",
+                    new TreeNode<string>("디자인팀",
+                new TreeNode<string>("전투"),
+                new TreeNode<string>("경제"),
+                new TreeNode<string>("스토리")
+                ),
+                    new TreeNode<string>("프로그래밍",
+                new TreeNode<string>("서버"),
+                new TreeNode<string>("클라"),
+                new TreeNode<string>("엔진")),
+                    new TreeNode<string>("아트팀",
+                new TreeNode<string>("배경"),
+                new TreeNode<string>("캐릭터"))
+                );
+            Tree<string> R1 = new Tree<string>();
+            R1.Initialize(root);
+            Tree<string>.PrintTree(R1._Root);
+
         }
     }
 }
