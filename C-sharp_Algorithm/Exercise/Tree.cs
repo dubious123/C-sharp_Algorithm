@@ -40,7 +40,7 @@ namespace Exercise
             foreach(TreeNode<T> child in Root._Children)
             {
                 int newheight = GetHeight(child) + 1;
-                if (height < newheight) { height = newheight; }
+                height = Math.Max(height, newheight);
             }
 
 
