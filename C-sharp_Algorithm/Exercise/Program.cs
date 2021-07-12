@@ -43,9 +43,9 @@ namespace Exercise
 
 
             Graph graph = new Graph();
-            graph.SearchAll();
+            //graph.SearchAll();
 
-
+            graph.BFS2(0);
         }
     }
 }
