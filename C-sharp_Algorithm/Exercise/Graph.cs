@@ -33,6 +33,67 @@ namespace Exercise
             new List<int>() { 3, 5 },
             new List<int>() { 4 }
         };
+
+
+        //가중치 그래프
+        int[,] adj3 = new int[6, 6]
+        {
+            {-1,15,-1,35,-1,-1 },
+            {15,-1,05,10,-1,-1 },
+            {-1,05,-1,-1,-1,-1 },
+            {35,10,-1,-1,05,-1 },
+            {-1,-1,-1,05,-1,05 },
+            {-1,-1,-1,-1,05,-1 },
+        };
+  
+        //DIijikstra
+
+        public void Dijikstra(int start)
+        {
+            bool[] visited = new bool[6];
+            int[] distance = new int[6];
+            int[] parent = new int[6];
+            //배열 모든 값 초기화
+            Array.Fill(distance, Int32.MaxValue);
+
+            distance[start] = 0;
+            parent[start] = start;
+            while (true)
+            {
+                //제일 좋은 후보를 찾는다(가장 가까이에 있는)
+                int closest = Int32.MaxValue;
+                int now = -1; 
+                for (int i = 0; i < adj3.GetLength(0); i++)
+                {
+                    //이미 방문한 정점은 스킵
+                    if(visited[i]) { continue; }
+                    //아직 발견(예약)된 적이 없거나, 기존 후보보다 멀리 있으면 스킵
+                    if(distance[i] == Int32.MaxValue || distance[i] >= closest) { continue; }
+                    closest = distance[i];
+                    now = i;
+                }
+                //다음 후보가 하나도 없다 ->연결이 단절되어있거나 다 순회했다 -> 종료
+                if(now == -1) { break; }
+
+                //제일 좋은 후보를 찾았으니 방문한다.
+
+                visited[now] = true;
+                //방문한 정점과 인접한 정점들을 조사해서 최단거리를 갱신한다.
+                for(int next = 0; next < adj3.GetLength(0); next++)
+                {
+                    if (adj3[now, next] == -1) { continue; }//연결이 안되어있을 때
+                    if (visited[next]) { continue; }//이미 방문했을 때
+                    //새로 조사된 정점의 최단거리 계산
+                    if(distance[now] + adj3[now, next] < distance[next]) 
+                    { 
+                        distance[next] = distance[now] + adj3[now, next];
+                        parent[next] = now;
+                    }
+
+                }
+            }
+        }
+
         //DFS
         bool[] visited = new bool[6];
         //1. now부터 방문하고
@@ -82,7 +143,7 @@ namespace Exercise
         {
             Console.WriteLine(now);
             visited[now] = true;
-            for(int next = 0; next < adj.GetLength(0); next++)
+            for (int next = 0; next < adj.GetLength(0); next++)
             {
                 if (adj[now, next] == 0 || visited[next]) { continue; }
                 visited[next] = true;

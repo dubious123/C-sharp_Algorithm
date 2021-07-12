@@ -45,7 +45,8 @@ namespace Exercise
             Graph graph = new Graph();
             //graph.SearchAll();
 
-            graph.BFS2(0);
+            //graph.BFS2(0);
+            graph.Dijikstra(0);
         }
     }
 }
