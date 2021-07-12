@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PriorityQueue;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,7 +31,104 @@ namespace Creature
             PosY = posY;
             _board = board;
             //RightHand();
-            BFS();
+            //BFS();
+            Astar();
+        }
+        struct PQnode : IComparable<PQnode>
+        {
+            public int F;
+            public int G;
+            public int Y;
+            public int X;
+
+            public int CompareTo(PQnode other)
+            {
+                if (F == other.F) { return 0; }
+                return F < other.F ? 1 : -1;
+            }
+        }
+        
+        private void Astar()
+        {
+            // U L D R UL DL DR UR
+            int[] deltaY = new int[] { -1, 0, 1, 0 , -1, 1, 1, -1};
+            int[] deltaX = new int[] { 0, -1, 0, 1 , -1, -1, 1, 1};
+            int[] cost = new int[] { 10, 10, 10, 10, 14, 14, 14, 14};
+            //점수 매기기
+            //F = G + H
+            //F = 최종 점수(작을 수록 좋음, 경로에 따라 달라짐)
+            //G = 시작점에서 해당 좌표까지 이동해는데 드는 비용(작을 수록 좋음, 경로에 따라 달라짐)
+            //H = 목적지에서 얼마나 가까운지(고정)
+
+            //(y,x) 이미 방문했는지 여부 (qkdnas = closed 상태)
+            bool[,] closed = new bool[_board.RowSize, _board.ColumnSize]; //ClosedList
+            //(y,x) 가는 길을 한번이라도 발견했는지
+            //발견X => MaxValue
+            //발견O => F = G + H
+            int[,] open = new int[_board.RowSize, _board.ColumnSize]; //OpneList
+            for (int y = 0; y < _board.RowSize; y++)
+                for (int x = 0; x < _board.ColumnSize; x++)
+                    open[y, x] = Int32.MaxValue;
+            Pos[,] parent = new Pos[_board.RowSize, _board.ColumnSize];
+
+            //오픈리스트에 있는 정보들 중에서 가장 좋은 후보를 빠르게 뽑아오기 위한 도구
+            PriorityQueue<PQnode> pq = new PriorityQueue<PQnode>();
+            //시작점 발견(예약 진행)
+            open[PosY, PosX] = (Math.Abs(_board.DestY - PosY) + Math.Abs(_board.DestX - PosX))*10;
+            pq.Push(new PQnode() { F = (Math.Abs(_board.DestY - PosY) + Math.Abs(_board.DestX - PosX))*10, G = 0, Y = PosY, X = PosX }) ;
+            parent[PosY, PosX] = new Pos(PosY, PosX);
+            while (pq.Count>0)
+            {
+                //제일 좋은 후보를 찾는다.
+                PQnode node = pq.Pop();
+                //동일한 좌표를 여러 경로로 찾아서, 더 빠른 경로로 인해서 이미 방문(closed)된 경우 스킵
+                if (closed[node.Y, node.X]) { continue; }
+                //방문한다.
+                closed[node.Y, node.X] = true;
+                if (node.Y == _board.DestY && node.X == _board.DestX) { break; }
+
+                //상하좌우등 이동할 수 있는 좌표인지 확인해서 예약(open)한다
+                for (int i = 0; i < deltaY.Length; i++)
+                {
+                    int nextY = node.Y + deltaY[i];
+                    int nextX = node.X + deltaX[i];
+                    //유효범위 체크
+                    if (nextY < 0 || nextY >= _board.RowSize || nextX < 0 || nextX >= _board.ColumnSize) { continue; }
+                    //벽체크 + 방문한 곳 체크
+                    if (_board.Tile[nextY, nextX] == Board.Board.TileType.Wall || closed[nextY, nextX]) { continue; }
+                    //비용계산 
+                    int g = node.G + cost[i];
+                    int h = (Math.Abs(_board.DestY - nextY) + Math.Abs(_board.DestX - nextX))*10;
+                    //다른 경로에서 더 빠른 길 이미 찾았으면 스킵
+                    if(open[nextY,nextX] < g + h) { continue; }
+                    //가장 좋은 케이스, 예약
+                    open[nextY, nextY] = g + h;
+                    pq.Push(new PQnode() { F = g + h, G = g, Y = nextY, X = nextX });
+                    parent[nextY, nextX] = new Pos(node.Y, node.X);
+                }
+
+            }
+            CalcPathFromParent(parent);
+
+        }
+
+
+
+        public void CalcPathFromParent(Pos[,] parent)
+        {
+            int y = _board.DestY;
+            int x = _board.DestX;
+            //부모좌표가 나와 같으면 끝
+            while (parent[y, x].Y != y || parent[y, x].X != x)
+            {
+                _points.Add(new Pos(y, x));
+                Pos pos = parent[y, x];
+                y = pos.Y;
+                x = pos.X;
+            }
+            _points.Add(new Pos(y, x)); // 처음 점
+
+            _points.Reverse();
         }
         void BFS()
         {
@@ -60,19 +158,8 @@ namespace Creature
                 }
 
             }
-            int y = _board.DestY;
-            int x = _board.DestX;
-            //부모좌표가 나와 같으면 끝
-            while (parent[y, x].Y != y || parent[y, x].X != x)
-            {
-                _points.Add(new Pos(y, x));
-                y = parent[y, x].Y;
-                x = parent[y, x].X;
-            }
-            _points.Add(new Pos(y, x)); // 처음 점
 
-            _points.Reverse();
-
+            CalcPathFromParent(parent);
         }
         void RightHand()
         {
@@ -113,13 +200,19 @@ namespace Creature
                 }
             }
         }
-        const int MOVE_TICK = 10;
+        const int MOVE_TICK = 30;
         int _sumTick = 0;
         int _lastindex = 0;
         public void Update(int deltaTick)
         {
             _sumTick += deltaTick;
-            if (_lastindex >= _points.Count) { return; }
+            if (_lastindex >= _points.Count) 
+            {
+                _lastindex = 0;
+                _points.Clear();
+                _board.Initialize(_board.RowSize,_board.ColumnSize,this);
+                Initialize(1, 1, _board);
+            }
             if (_sumTick >= MOVE_TICK)
             {
                 _sumTick = 0;

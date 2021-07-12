@@ -78,7 +78,7 @@ namespace DIY_Right_hand_Algorighm
             _COLUMN_SIZE = COLUMN_SIZE;
             PlayerColor = ConsoleColor.Blue;
 
-            while (PlayerPos.Last()._PosX != _ExistX && PlayerPos.Last()._PosX != _ExistX)
+            while (PlayerPos.Last()._PosX != _ExistY && PlayerPos.Last()._PosX != _ExistX)
             {
                 //오른쪽으로 갈 수 있으면 오른쪽으로 돌고 앞으로 간다
                 if (_PlayerMoveRightward(tiles, CurrentPlayerDir)) 
